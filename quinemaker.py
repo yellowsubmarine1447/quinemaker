@@ -1,8 +1,7 @@
 import sys
 
-if len(sys.argv) != 2:
-    print("Enter a Python program's file name")
-    exit(1)
+if len(sys.argv) != 2: # prints nothing only for the sake of making a quinemaker maker, blame @RYNO8 :P
+    exit(0)
 
 file_contents = open(sys.argv[1]).read()
 repr_contents = file_contents.replace("\\", "\\\\").replace('"""', '""\\"')
